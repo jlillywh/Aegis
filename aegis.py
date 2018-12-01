@@ -11,11 +11,11 @@ class Aegis:
         about_str : str
             a formatted string to print out the store properties
         name : str
-            the name of the store
+            the name of the object
 
         Methods
         -------
-        getNumInstances : int
+        getInstanceCount : int
             return the number of objects of this class created
         """
 
@@ -26,12 +26,13 @@ class Aegis:
         Parameters
         ----------
         name : str, optional
-            the amount in the store
+            the name of the store
         """
 
         self.id = next(self._ids)
+        self.name = name
 
-    def getNumInstances(self):
+    def getInstanceCount(self):
         """
         Get the count of objects created by this class
         :return:
