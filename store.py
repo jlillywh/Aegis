@@ -34,6 +34,8 @@ class Store(Aegis):
         ----------
         name : str, optional
             the name of the object (inherited)
+        description : str, optional
+            describe what the store represents
         quantity : float, optional
             the amount in the store
         capacity : float, optional

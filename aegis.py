@@ -12,6 +12,8 @@ class Aegis:
             a formatted string to print out the store properties
         name : str
             the name of the object
+        description : str
+            what does this object represent?
 
         Methods
         -------
@@ -27,10 +29,13 @@ class Aegis:
         ----------
         name : str, optional
             the name of the store
+        description : str
+            what does this object represent?
         """
 
         self.id = next(self._ids)
         self.name = name
+        self.description = "A basic object."
 
     def getInstanceCount(self):
         """
