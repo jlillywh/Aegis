@@ -8,7 +8,7 @@ class Aegis:
 
         Attributes
         ----------
-        about_str : str
+        about : str
             a formatted string to print out the store properties
         name : str
             the name of the object
